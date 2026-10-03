@@ -1,0 +1,76 @@
+/* =========================================================================
+   RESPONSIVE RULES
+   Desktop-first base lives in main.css. This file handles breakpoint
+   specific layout changes: sidebar -> offcanvas, header collapsing, etc.
+   ========================================================================= */
+
+/* ----- Large tablets / small laptops ----- */
+@media (max-width: 1199.98px){
+  .page-content{padding:20px 18px 50px;}
+  .stat-card .stat-value{font-size:23px;}
+}
+
+/* ----- Tablets: sidebar becomes an off-canvas drawer ----- */
+@media (max-width: 991.98px){
+  .app-sidebar{
+    transform:translateX(-100%);
+    box-shadow:none;
+  }
+  body.sidebar-mobile-open .app-sidebar{transform:translateX(0); box-shadow:var(--md-shadow-lg);}
+  .main-wrapper{margin-left:0 !important; width:100% !important;}
+  .sidebar-toggle-btn{display:none;}
+  .mobile-toggle-btn{display:flex;}
+  .header-search{display:none;}
+  .header-search-mobile-btn{display:flex !important;}
+  .app-header{padding:0 16px;}
+  .profile-btn .profile-meta{display:none;}
+  .profile-btn{padding:6px; border:none;}
+  .header-right{gap:2px;}
+  .icon-btn{width:38px; height:38px; font-size:18px;}
+  .promo-banner{min-height:auto; padding:26px;}
+  .chat-sidebar{position:absolute; left:0; top:0; bottom:0; z-index:5; width:280px; transform:translateX(-100%); transition:.25s ease; background:var(--md-card-bg);}
+  .chat-shell.show-chat-list .chat-sidebar{transform:translateX(0);}
+  .kanban-board{overflow-x:auto;}
+}
+
+@media (min-width: 992px){
+  .mobile-toggle-btn{display:none;}
+  .header-search-mobile-btn{display:none !important;}
+}
+
+/* ----- Phones ----- */
+@media (max-width: 767.98px){
+  .page-head{flex-direction:column; align-items:stretch;}
+  .page-head .page-actions{width:100%;}
+  .page-head .page-actions .btn{flex:1;}
+  .page-head h2{font-size:20px;}
+  .card-body{padding:16px;}
+  .card-header{padding:15px 16px;}
+  .stat-card{padding:18px;}
+  .auth-visual{display:none;}
+  .auth-form-side{padding:24px;}
+  .error-code{font-size:80px;}
+  .chat-bubble{max-width:80%;}
+  .filter-bar{flex-direction:column; align-items:stretch;}
+  .filter-bar .form-select, .filter-bar .form-control{min-width:0; width:100%;}
+  .dataTable-controls{flex-direction:column; align-items:stretch;}
+  .table-responsive-wrap{border-radius:0;}
+  .back-to-top{width:40px; height:40px; bottom:16px; right:16px;}
+  .sidebar-brand .brand-name{font-size:17px;}
+  .step-indicator .step-line{width:26px;}
+}
+
+@media (max-width: 575.98px){
+  .app-header{height:64px;}
+  :root{--header-height:64px;}
+  .profile-meta{display:none;}
+  .kpi-row > [class*="col-"]{padding-left:6px; padding-right:6px;}
+  .promo-banner .promo-illustration{display:none;}
+}
+
+/* ----- Print ----- */
+@media print{
+  .app-sidebar, .app-header, .page-actions, .back-to-top, .content-overlay{display:none !important;}
+  .main-wrapper{margin-left:0 !important;}
+  body{background:#fff;}
+}

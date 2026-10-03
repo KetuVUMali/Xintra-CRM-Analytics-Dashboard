@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todo · NimbusDesk Admin</title>
+<meta name="description" content="NimbusDesk — an original multi-facility admin dashboard system built with HTML, CSS, Bootstrap 5 and vanilla JS.">
+<link rel="icon" type="image/svg+xml" href="../assets/images/logos/favicon.svg">
+<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="../assets/css/bootstrap-icons.min.css">
+<link rel="stylesheet" href="../assets/css/aos.css">
+
+
+<link rel="stylesheet" href="../assets/css/fonts.css">
+<link rel="stylesheet" href="../assets/css/main.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+<noscript><style>[data-aos]{opacity:1 !important; transform:none !important;}</style></noscript>
+<script>(function(){try{
+var d=document.documentElement,ls=window.localStorage;
+var t=ls.getItem("nimbus-theme"),s=ls.getItem("nimbus-skin"),sb=ls.getItem("nimbus-sidebar-style"),lw=ls.getItem("nimbus-layout-width");
+if(t)d.setAttribute("data-theme",t);
+if(s)d.setAttribute("data-skin",s);
+if(sb)d.setAttribute("data-sidebar",sb);
+if(lw)d.setAttribute("data-layout",lw);
+}catch(e){}})();</script>
+
+</head>
+<body data-theme="light" class="">
+<script>window.NIMBUS_BASE = "../";</script>
+
+<div class="app-shell">
+  <aside class="app-sidebar">
+  <div class="sidebar-brand">
+    <a href="../index.html" class="d-flex align-items-center gap-2 text-decoration-none flex-grow-1 min-w-0">
+      <span class="brand-logo">N</span>
+      <span class="brand-name">Nimbus<span>Desk</span></span>
+    </a>
+    <button class="btn btn-icon btn-sm text-white d-lg-none sidebar-close-btn" aria-label="Close menu"><i class="bi bi-x-lg"></i></button>
+  </div>
+  <div class="sidebar-scroll scroll-thin">
+    <div class="sidebar-label">MAIN</div><ul class="sidebar-nav"><li class="nav-item"><a class="nav-link " href="#" data-bs-toggle="collapse" data-bs-target="#collapse-dashboards_group" aria-expanded="false" role="button"><i class="bi bi-grid-1x2-fill nav-icon"></i><span class="nav-link-text">Dashboards</span><i class="bi bi-chevron-right menu-arrow ms-auto"></i></a><ul class="sidebar-submenu collapse " id="collapse-dashboards_group"><li class="nav-item"><a class="nav-link " href="../index.html"><span class="nav-link-text">Overview</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/sales.html"><span class="nav-link-text">Sales</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/analytics.html"><span class="nav-link-text">Analytics</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/ecommerce.html"><span class="nav-link-text">Ecommerce</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/crm.html"><span class="nav-link-text">CRM</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/hrm.html"><span class="nav-link-text">HRM</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/nft.html"><span class="nav-link-text">NFT</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/crypto.html"><span class="nav-link-text">Crypto</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/jobs.html"><span class="nav-link-text">Jobs</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/projects.html"><span class="nav-link-text">Projects</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/courses.html"><span class="nav-link-text">Courses</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/stocks.html"><span class="nav-link-text">Stocks</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/medical.html"><span class="nav-link-text">Medical</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/pos-system.html"><span class="nav-link-text">POS System</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/podcast.html"><span class="nav-link-text">Podcast</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/school.html"><span class="nav-link-text">School</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/social-media.html"><span class="nav-link-text">Social Media</span></a></li></ul></li></ul><div class="sidebar-label">APPLICATIONS</div><ul class="sidebar-nav"><li class="nav-item"><a class="nav-link " href="../pages/blog.html"><i class="bi bi-file-earmark-richtext nav-icon"></i><span class="nav-link-text">Blog</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/chat.html"><i class="bi bi-chat-dots nav-icon"></i><span class="nav-link-text">Chat</span><span class="badge badge-soft-primary rounded-pill nav-link-badge">8</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/faq.html"><i class="bi bi-question-circle nav-icon"></i><span class="nav-link-text">FAQ</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/file-manager.html"><i class="bi bi-folder2-open nav-icon"></i><span class="nav-link-text">File Manager</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/mail.html"><i class="bi bi-envelope nav-icon"></i><span class="nav-link-text">Mail</span><span class="badge badge-soft-primary rounded-pill nav-link-badge">4</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/mail-settings.html"><i class="bi bi-sliders2 nav-icon"></i><span class="nav-link-text">Mail Settings</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/pricing.html"><i class="bi bi-tag nav-icon"></i><span class="nav-link-text">Pricing</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/profile.html"><i class="bi bi-person-circle nav-icon"></i><span class="nav-link-text">Profile</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/reviews.html"><i class="bi bi-star nav-icon"></i><span class="nav-link-text">Reviews</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/search.html"><i class="bi bi-search nav-icon"></i><span class="nav-link-text">Search</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/team.html"><i class="bi bi-people-fill nav-icon"></i><span class="nav-link-text">Team</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/timeline.html"><i class="bi bi-clock-history nav-icon"></i><span class="nav-link-text">Timeline</span></a></li><li class="nav-item"><a class="nav-link active" href="../pages/todo.html"><i class="bi bi-check2-square nav-icon"></i><span class="nav-link-text">Todo</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/terms.html"><i class="bi bi-file-earmark-lock nav-icon"></i><span class="nav-link-text">Terms & Conditions</span></a></li></ul><div class="sidebar-label">ECOMMERCE</div><ul class="sidebar-nav"><li class="nav-item"><a class="nav-link " href="../pages/ecommerce/products.html"><i class="bi bi-box-seam nav-icon"></i><span class="nav-link-text">Products</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/ecommerce/product-details.html"><i class="bi bi-box nav-icon"></i><span class="nav-link-text">Product Details</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/ecommerce/add-product.html"><i class="bi bi-plus-square nav-icon"></i><span class="nav-link-text">Add Product</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/ecommerce/cart.html"><i class="bi bi-cart nav-icon"></i><span class="nav-link-text">Cart</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/ecommerce/checkout.html"><i class="bi bi-credit-card nav-icon"></i><span class="nav-link-text">Checkout</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/ecommerce/orders.html"><i class="bi bi-receipt nav-icon"></i><span class="nav-link-text">Orders</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/ecommerce/order-details.html"><i class="bi bi-receipt-cutoff nav-icon"></i><span class="nav-link-text">Order Details</span></a></li></ul><div class="sidebar-label">SYSTEM</div><ul class="sidebar-nav"><li class="nav-item"><a class="nav-link " href="../pages/profile.html"><i class="bi bi-person-circle nav-icon"></i><span class="nav-link-text">Profile</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/settings.html"><i class="bi bi-gear nav-icon"></i><span class="nav-link-text">Settings</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/notifications.html"><i class="bi bi-bell nav-icon"></i><span class="nav-link-text">Notifications</span></a></li><li class="nav-item"><a class="nav-link " href="../pages/activity-log.html"><i class="bi bi-activity nav-icon"></i><span class="nav-link-text">Activity Log</span></a></li></ul>
+  </div>
+  <div class="sidebar-footer">
+    <div class="sidebar-upgrade">
+      <i class="bi bi-rocket-takeoff-fill"></i>
+      <h6>Go Pro</h6>
+      <p>Unlock every dashboard module &amp; premium widgets.</p>
+      <a href="../pages/pricing.html" class="btn btn-light btn-sm w-100">Upgrade Now</a>
+    </div>
+  </div>
+</aside>
+  <div class="sidebar-flyout" id="sidebarFlyout"></div>
+  <div class="content-overlay"></div>
+  <div class="main-wrapper">
+    <header class="app-header">
+  <div class="header-left">
+    <button class="sidebar-toggle-btn" aria-label="Toggle sidebar"><i class="bi bi-layout-sidebar"></i></button>
+    <button class="mobile-toggle-btn" aria-label="Open menu"><i class="bi bi-list"></i></button>
+    <a href="../index.html" class="d-flex d-lg-none align-items-center gap-2 text-decoration-none flex-shrink-0">
+      <span class="brand-logo" style="width:32px;height:32px;font-size:14px;">N</span>
+    </a>
+    <div class="header-search d-none d-md-block" role="button" data-bs-toggle="modal" data-bs-target="#globalSearchModal">
+      <i class="bi bi-search"></i>
+      <input type="text" placeholder="Search anything here ..." readonly style="cursor:pointer;">
+      <kbd>Ctrl K</kbd>
+    </div>
+  </div>
+  <div class="header-right">
+    <button class="icon-btn header-search-mobile-btn d-none" data-bs-toggle="modal" data-bs-target="#globalSearchModal" aria-label="Search"><i class="bi bi-search"></i></button>
+    <div class="dropdown d-none d-md-block">
+      <button class="icon-btn" type="button" data-bs-toggle="dropdown" aria-label="Language"><i class="bi bi-translate"></i></button>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item active" href="#">🇺🇸 English</a></li>
+        <li><a class="dropdown-item" href="#">🇪🇸 Español</a></li>
+        <li><a class="dropdown-item" href="#">🇫🇷 Français</a></li>
+        <li><a class="dropdown-item" href="#">🇮🇳 हिन्दी</a></li>
+        <li><a class="dropdown-item" href="#">🇩🇪 Deutsch</a></li>
+      </ul>
+    </div>
+    <button class="icon-btn theme-toggle-btn" aria-label="Toggle theme"><i class="bi bi-moon icon-moon"></i><i class="bi bi-sun icon-sun"></i></button>
+    <div class="dropdown">
+  <button class="icon-btn position-relative header-cart-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Cart">
+    <i class="bi bi-cart3"></i><span class="badge-count">3</span>
+  </button>
+  <div class="dropdown-menu dropdown-menu-end mega-dropdown">
+    <div class="dd-head"><h6>Your Cart (3)</h6></div>
+    <div class="notif-item">
+      <img src="../assets/images/products/prod-4.svg" alt="" style="width:42px;height:42px;border-radius:10px;object-fit:cover;background:var(--md-body-bg)">
+      <div class="flex-grow-1"><p class="fs-13">Aria Wireless Headphones</p><small>1 x $129.00</small></div>
+    </div><div class="notif-item">
+      <img src="../assets/images/products/prod-11.svg" alt="" style="width:42px;height:42px;border-radius:10px;object-fit:cover;background:var(--md-body-bg)">
+      <div class="flex-grow-1"><p class="fs-13">Nimbus Running Shoes</p><small>2 x $89.00</small></div>
+    </div><div class="notif-item">
+      <img src="../assets/images/products/prod-7.svg" alt="" style="width:42px;height:42px;border-radius:10px;object-fit:cover;background:var(--md-body-bg)">
+      <div class="flex-grow-1"><p class="fs-13">Lumen Desk Lamp</p><small>1 x $46.00</small></div>
+    </div>
+    <div class="p-3 border-top d-flex align-items-center justify-content-between" style="border-color:var(--md-border)">
+      <span class="fw-700 text-heading">Subtotal: $353.00</span>
+    </div>
+    <div class="px-3 pb-3 d-flex gap-2">
+      <a href="../pages/ecommerce/cart.html" class="btn btn-light btn-sm w-50">View Cart</a>
+      <a href="../pages/ecommerce/checkout.html" class="btn btn-primary btn-sm w-50">Checkout</a>
+    </div>
+  </div>
+</div>
+    <div class="dropdown">
+  <button class="icon-btn position-relative" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Notifications">
+    <i class="bi bi-bell"></i><span class="badge-count notif-bell-badge">6</span>
+  </button>
+  <div class="dropdown-menu dropdown-menu-end mega-dropdown">
+    <div class="dd-head"><h6>Notifications</h6><button class="btn btn-link btn-sm p-0 mark-all-read-btn">Mark all read</button></div>
+    <div class="notif-item unread">
+      <span class="notif-icon bg-soft-success text-success-c"><i class="bi bi-bag-check-fill"></i></span>
+      <div class="flex-grow-1"><p>New order <strong>#ORD-8842</strong> received</p><small>2 min ago</small></div>
+    </div><div class="notif-item unread">
+      <span class="notif-icon bg-soft-primary text-primary-c"><i class="bi bi-person-plus-fill"></i></span>
+      <div class="flex-grow-1"><p>New user <strong>Emma Wilson</strong> registered</p><small>18 min ago</small></div>
+    </div><div class="notif-item unread">
+      <span class="notif-icon bg-soft-info text-info-c"><i class="bi bi-credit-card-fill"></i></span>
+      <div class="flex-grow-1"><p>Payment of <strong>$482.00</strong> completed</p><small>1 hour ago</small></div>
+    </div><div class="notif-item ">
+      <span class="notif-icon bg-soft-warning text-warning-c"><i class="bi bi-clock-fill"></i></span>
+      <div class="flex-grow-1"><p>Project deadline <strong>tomorrow</strong>: Mobile App Redesign</p><small>3 hours ago</small></div>
+    </div><div class="notif-item ">
+      <span class="notif-icon bg-soft-danger text-danger-c"><i class="bi bi-life-preserver"></i></span>
+      <div class="flex-grow-1"><p>New support ticket <strong>#TCK-231</strong> opened</p><small>6 hours ago</small></div>
+    </div><div class="notif-item ">
+      <span class="notif-icon bg-soft-pink text-pink-c"><i class="bi bi-star-fill"></i></span>
+      <div class="flex-grow-1"><p>You received a <strong>5-star review</strong></p><small>Yesterday</small></div>
+    </div>
+    <div class="text-center p-2 border-top" style="border-color:var(--md-border)"><a href="../pages/notifications.html" class="fs-13 fw-600">View all notifications</a></div>
+  </div>
+</div>
+    <button class="icon-btn fullscreen-btn d-none d-md-flex" aria-label="Fullscreen"><i class="bi bi-arrows-fullscreen"></i></button>
+    <button class="icon-btn d-none d-md-flex" data-bs-toggle="offcanvas" data-bs-target="#themeCustomizerPanel" aria-label="Customize"><i class="bi bi-gear"></i></button>
+    <div class="dropdown">
+  <button class="profile-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border:none;">
+    <img src="../assets/images/avatars/av-3.svg" alt="Profile">
+    <span class="profile-meta d-none d-lg-block"><strong>Arlene Rodriguez</strong><span>Product Admin</span></span>
+  </button>
+  <div class="dropdown-menu dropdown-menu-end" style="width:230px;">
+    <div class="d-flex align-items-center gap-2 px-2 pb-2 mb-1 border-bottom" style="border-color:var(--md-border)!important;">
+      <img src="../assets/images/avatars/av-3.svg" style="width:40px;height:40px;border-radius:10px;" alt="">
+      <div><strong class="d-block fs-13 text-heading">Arlene Rodriguez</strong><span class="fs-12 text-muted-c">arlene@nimbusdesk.io</span></div>
+    </div>
+    <a class="dropdown-item" href="../pages/profile.html"><i class="bi bi-person"></i> My Profile</a>
+    <a class="dropdown-item" href="../pages/settings.html"><i class="bi bi-gear"></i> Account Settings</a>
+    <a class="dropdown-item" href="../pages/activity-log.html"><i class="bi bi-activity"></i> Activity Log</a>
+    <a class="dropdown-item" href="../pages/pricing.html"><i class="bi bi-gem"></i> Billing &amp; Plans</a>
+    <a class="dropdown-item" href="../pages/auth/lock-screen.html"><i class="bi bi-lock"></i> Lock Screen</a>
+    <hr class="my-2" style="border-color:var(--md-border)">
+    <a class="dropdown-item text-danger-c" href="../pages/auth/login.html" data-bs-toggle="modal" data-bs-target="#logoutConfirmModal" onclick="event.preventDefault()"><i class="bi bi-box-arrow-right"></i> Logout</a>
+  </div>
+</div>
+  </div>
+</header>
+    <main class="page-content">
+      <div class="page-head" data-aos="fade-up">
+  <div>
+    <nav aria-label="breadcrumb"><ol class="breadcrumb mb-2"><li class="breadcrumb-item ">Applications</li><li class="breadcrumb-item active">Todo</li></ol></nav>
+    <h2>Todo</h2>
+    
+  </div>
+  <div class="page-actions"></div>
+</div>
+<div class="row g-3">
+  <div class="col-xxl-8">
+    <div class="card" data-aos="fade-up">
+      <div class="card-header">
+        <h6 class="fw-700 mb-0">My Tasks</h6><span id="todoCounter" class="fs-12 text-muted-c"></span>
+      </div>
+      <div class="card-body">
+        <form id="todoAddForm" class="input-group mb-3">
+          <input type="text" class="form-control" id="todoInput" placeholder="Add a new task and press Enter...">
+          <button class="btn btn-primary" type="submit"><i class="bi bi-plus-lg"></i></button>
+        </form>
+        <ul class="nav nav-tabs mb-3">
+          <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#todoAllTab">All</a></li>
+          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#todoActiveTab">Active</a></li>
+          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#todoDoneTab">Completed</a></li>
+        </ul>
+        <div id="todoList"><div class="todo-item ">
+      <input class="form-check-input todo-check" type="checkbox" >
+      <span class="todo-text flex-grow-1">Review Q3 marketing plan draft</span><span class="badge badge-soft-danger rounded-pill">High</span>
+      <button class="btn btn-icon btn-sm btn-light todo-delete"><i class="bi bi-trash3"></i></button>
+    </div><div class="todo-item ">
+      <input class="form-check-input todo-check" type="checkbox" >
+      <span class="todo-text flex-grow-1">Approve new employee onboarding doc</span><span class="badge badge-soft-warning rounded-pill">Medium</span>
+      <button class="btn btn-icon btn-sm btn-light todo-delete"><i class="bi bi-trash3"></i></button>
+    </div><div class="todo-item done">
+      <input class="form-check-input todo-check" type="checkbox" checked>
+      <span class="todo-text flex-grow-1">Sync with design on component tokens</span><span class="badge badge-soft-warning rounded-pill">Medium</span>
+      <button class="btn btn-icon btn-sm btn-light todo-delete"><i class="bi bi-trash3"></i></button>
+    </div><div class="todo-item ">
+      <input class="form-check-input todo-check" type="checkbox" >
+      <span class="todo-text flex-grow-1">Reply to vendor contract email</span><span class="badge badge-soft-secondary rounded-pill">Low</span>
+      <button class="btn btn-icon btn-sm btn-light todo-delete"><i class="bi bi-trash3"></i></button>
+    </div><div class="todo-item ">
+      <input class="form-check-input todo-check" type="checkbox" >
+      <span class="todo-text flex-grow-1">Prepare board meeting slides</span><span class="badge badge-soft-danger rounded-pill">High</span>
+      <button class="btn btn-icon btn-sm btn-light todo-delete"><i class="bi bi-trash3"></i></button>
+    </div><div class="todo-item done">
+      <input class="form-check-input todo-check" type="checkbox" checked>
+      <span class="todo-text flex-grow-1">Update Q2 OKRs tracker</span><span class="badge badge-soft-secondary rounded-pill">Low</span>
+      <button class="btn btn-icon btn-sm btn-light todo-delete"><i class="bi bi-trash3"></i></button>
+    </div></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xxl-4">
+    <div class="card" data-aos="fade-up" data-aos-delay="100">
+      <div class="card-header"><h6 class="fw-700">This Week</h6><div class="d-flex align-items-center gap-2"></div></div>
+      <div class="card-body"><div class="chart-wrap" style="height:200px;"><canvas id="chartTodoWeek"></canvas></div></div>
+    </div>
+  </div>
+</div>
+<script>document.getElementById('todoCounter').textContent = "2 / 6 completed";</script>
+
+    </main>
+    <footer class="text-center py-3 fs-12 text-muted-c">
+      © <span class="current-year"></span> NimbusDesk. An original UI concept built for demonstration purposes.
+    </footer>
+  </div>
+</div>
+
+<div class="modal fade search-modal" id="globalSearchModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="position-relative">
+        <i class="bi bi-search search-icon-lg"></i>
+        <input type="text" class="form-control search-input-lg" id="globalSearchInput" placeholder="Search pages, users, products, projects, documents...">
+        <button class="btn btn-icon position-absolute" style="right:10px; top:50%; transform:translateY(-50%);" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="p-2 scroll-thin" style="max-height:60vh; overflow-y:auto;" id="globalSearchResults"></div>
+      <div class="d-flex align-items-center gap-3 px-3 py-2 border-top fs-12 text-muted-c" style="border-color:var(--md-border)">
+        <span><kbd>↵</kbd> to select</span><span><kbd>Esc</kbd> to close</span><span class="ms-auto">Local demo data — no network calls</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="logoutConfirmModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body text-center py-4">
+        <div class="icon-tile bg-soft-danger text-danger-c mx-auto mb-3" style="width:64px;height:64px;font-size:28px;"><i class="bi bi-box-arrow-right"></i></div>
+        <h5>Log out of NimbusDesk?</h5>
+        <p class="text-muted-c mb-0">You'll need to sign in again to access your dashboards.</p>
+      </div>
+      <div class="modal-footer justify-content-center border-0 pt-0">
+        <button class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+        <a href="../pages/auth/login.html" class="btn btn-danger text-white">Yes, Logout</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="themeCustomizerPanel">
+  <div class="offcanvas-header border-bottom" style="border-color:var(--md-border)">
+    <div>
+      <h5 class="mb-0">Customize</h5>
+      <span class="fs-12 text-muted-c">Live preview — saved automatically</span>
+    </div>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <h6 class="fs-13 text-uppercase text-muted-c mb-3">Mode</h6>
+    <div class="style-option-group mb-4">
+      <button type="button" class="style-option-btn theme-toggle-btn"><i class="bi bi-brightness-high"></i>Light / Dark</button>
+    </div>
+
+    <h6 class="fs-13 text-uppercase text-muted-c mb-3">Accent Color</h6>
+    <div class="d-flex gap-3 flex-wrap mb-4"><button type="button" class="skin-swatch" data-set-skin="purple" style="background:#6C5DD3;color:#6C5DD3;" title="Purple"><i class="bi bi-check-lg"></i></button><button type="button" class="skin-swatch" data-set-skin="blue" style="background:#3E7BFA;color:#3E7BFA;" title="Blue"><i class="bi bi-check-lg"></i></button><button type="button" class="skin-swatch" data-set-skin="green" style="background:#12B76A;color:#12B76A;" title="Green"><i class="bi bi-check-lg"></i></button><button type="button" class="skin-swatch" data-set-skin="orange" style="background:#FB8B24;color:#FB8B24;" title="Orange"><i class="bi bi-check-lg"></i></button><button type="button" class="skin-swatch" data-set-skin="red" style="background:#E5484D;color:#E5484D;" title="Red"><i class="bi bi-check-lg"></i></button><button type="button" class="skin-swatch" data-set-skin="teal" style="background:#0DB4B9;color:#0DB4B9;" title="Teal"><i class="bi bi-check-lg"></i></button></div>
+
+    <h6 class="fs-13 text-uppercase text-muted-c mb-3">Sidebar Style</h6>
+    <div class="style-option-group mb-4">
+      <button type="button" class="style-option-btn" data-set-sidebar-style="dark"><i class="bi bi-moon-stars"></i>Dark</button>
+      <button type="button" class="style-option-btn" data-set-sidebar-style="light"><i class="bi bi-brightness-high"></i>Light</button>
+      <button type="button" class="style-option-btn" data-set-sidebar-style="gradient"><i class="bi bi-palette"></i>Gradient</button>
+    </div>
+
+    <h6 class="fs-13 text-uppercase text-muted-c mb-3">Layout Width</h6>
+    <div class="style-option-group mb-4">
+      <button type="button" class="style-option-btn" data-set-layout="fluid"><i class="bi bi-arrows-angle-expand"></i>Fluid</button>
+      <button type="button" class="style-option-btn" data-set-layout="boxed"><i class="bi bi-aspect-ratio"></i>Boxed</button>
+    </div>
+
+    <h6 class="fs-13 text-uppercase text-muted-c mb-3">Sidebar</h6>
+    <div class="style-option-group mb-4">
+      <button type="button" class="style-option-btn sidebar-toggle-btn"><i class="bi bi-layout-sidebar"></i>Collapse / Expand</button>
+    </div>
+
+    <hr style="border-color:var(--md-border)">
+    <p class="fs-12 text-muted-c mb-0">Accent color changes reload the page so every chart repaints with the new palette. Sidebar style, layout width and light/dark mode apply instantly — all four are saved to this browser and persist across every page.</p>
+  </div>
+</div>
+<button class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/aos.js"></script>
+<script src="../assets/js/search-data.js"></script>
+<script src="../assets/js/chart.umd.min.js"></script>
+  <script src="../assets/js/charts.js"></script>
+
+
+<script src="../assets/js/tables.js"></script>
+<script src="../assets/js/components.js"></script>
+<script src="../assets/js/main.js"></script>
+<script>NimbusCharts.donut("chartTodoWeek", { labels:["Completed","Pending"], data:[2,4], legend:true, colors:["#1bc48b","#eaebf3"] });</script>
+</body>
+</html>
